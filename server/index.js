@@ -77,7 +77,7 @@ app.post('/resume/create', upload.single('headshotImage'), async (req, res) => {
     phone,
     skills,
     experience: parsedExperience,
-    image:`http://localhost:4000/uploads/${req.file.filename}`
+    image:`https://ai-resume-builder-ntxm.onrender.com/uploads/${req.file.filename}`
   }
 
   const prompt1 = `I am writing a resume, my details are \n name: ${name} \n education: ${education}. \n I have the following skills: ${skills}. can you write a 100 words description for top of the resume (first person writing)`

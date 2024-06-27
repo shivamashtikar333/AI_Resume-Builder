@@ -48,7 +48,7 @@ const Home = ({ setResult }) => {
     newFormData.append('experience', JSON.stringify(formData.experience));
 
     axios
-      .post('http://localhost:4000/resume/create', newFormData, {
+      .post('https://ai-resume-builder-ntxm.onrender.com/resume/create', newFormData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
